@@ -24,6 +24,7 @@ With the base R method, we first clear the *Global Environment*, then set a *wor
 rm(list = ls()) #this clears the Global Environment
 
 setwd("~/3 - R Studio Projects/pols3316-summer2022") #This sets the working directory
+#setwd("/cloud/project") #This sets the working directory
 ```
 
 With the working directory set, we're ready to actually load the data. The next line of code actually does multiple things. 
