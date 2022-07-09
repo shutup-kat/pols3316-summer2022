@@ -1642,14 +1642,16 @@ Instructor: Tom Hanna</h4>
 
 <div id="were-going-to-start-by-loading-some-data" class="section level2">
 <h2>We’re going to start by loading some data!</h2>
-<p>This is actually the same data that produced the plot above. It’s
-available in an R packgage, called “cars,” but we want to practice
-loading it from a file. While loading and examining this simple data
-set, we’ll look at some basic R concepts like <em>objects</em>, <em>data
-types</em>, <em>variables</em>, <em>observations</em>,
-<em>commands</em>, and <em>functions</em>. We will also briefly discuss
-good <em>work flow</em>, which is often considered an advanced topic but
-actually makes life simpler if you observe it from the start.</p>
+<p>This data is actually built into R in a package called “cars,” but we
+want to practice loading it from a file. (Later, we’ll practice loading
+data from the “iris” R package directly.) While loading and examining
+this simple data set, we’ll look at some basic R concepts like
+<em>objects</em>, <em>data types</em>, <em>variables</em>,
+<em>observations</em>, <em>commands</em>, and <em>functions</em>. We
+will also briefly discuss good <em>work flow</em>, which is often
+considered an advanced topic but actually makes life simpler if you
+observe it from the start. Finally, we’ll look at some summary
+statistics and graphical representations or plots.</p>
 </div>
 <div id="loading-data-base-r-method" class="section level2">
 <h2>Loading data: base R method</h2>
@@ -1680,7 +1682,8 @@ of the &lt;-. (For those of you with <em>python</em> experience, this is
 the same as the = in python.)</p>
 <p>Last, <em>read.csv</em> is an R <em>command</em> that tells R to read
 the file we specify.</p>
-<pre class="r"><code>cars_data &lt;- read.csv(&quot;./data/cars.csv&quot;) </code></pre>
+<pre class="r"><code>setwd(&quot;~/3 - R Studio Projects/pols3316-summer2022&quot;) #because of #the way R Notebooks work, I have to repeat this command in this #&quot;chunk&quot;
+cars_data &lt;- read.csv(&quot;./data/cars.csv&quot;) </code></pre>
 </div>
 <div id="loading-data-better-method" class="section level2">
 <h2>Loading Data: Better method!</h2>
@@ -1960,7 +1963,6 @@ head(cars_data)</code></pre>
 {"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["speed"],"name":[1],"type":["int"],"align":["right"]},{"label":["dist"],"name":[2],"type":["int"],"align":["right"]},{"label":["excess_speed"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"23","2":"54","3":"7.6","_rn_":"45"},{"1":"24","2":"70","3":"8.6","_rn_":"46"},{"1":"24","2":"92","3":"8.6","_rn_":"47"},{"1":"24","2":"93","3":"8.6","_rn_":"48"},{"1":"24","2":"120","3":"8.6","_rn_":"49"},{"1":"25","2":"85","3":"9.6","_rn_":"50"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>```</p>
 </div>
 
 
