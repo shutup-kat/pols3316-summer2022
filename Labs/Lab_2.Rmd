@@ -1,0 +1,15 @@
+---
+title: "Lab 2: July 14"
+author: "POLS 3316, Summer 2022, University of Houston, Instructor: Tom Hanna"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+
+
+```{r}
+plot(cars)
+```
+
