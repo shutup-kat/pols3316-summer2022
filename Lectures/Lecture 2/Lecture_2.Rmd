@@ -266,3 +266,34 @@ stargazer(my_model, type = "text")
 20. In the same research study, national wealth is the **explanatory** or **independent** variable? (Again, there is more than one correct answer.) 
 
 30. If you don't come to class regularly, don't complete assignments regularly, don't ask for help, don't take advantage of extra credit, don't answer the professor's emails offering help, and at the end of the semester you aren't satisfied with your grade, who is to blame? 
+
+
+## Preparing for Wednesday Lab
+
+This guide is your friend:
+
+https://happygitwithr.com/index.html (Parts 4,5,6,7, 9 and 12)
+
+Do these things:
+
+1. Sign up for a Github account
+
+2. Sign up for an R Studio Cloud account
+
+3. Join the R Studio Cloud class space 
+
+https://rstudio.cloud/spaces/260761/join?access_code=mv0pyFqMtTIxD7jrgLYPFwAtf4nMlMHYVnCYT_XH
+
+4. Install & configure Git on your computer
+
+5. Install R on your computer (Install R before R Studio!)
+
+6. Install R Studio on your computer (Install R first!)
+
+7a. (Optional) Make a test repository on Github and clone it with R studio (see part9 and part 12 on Happy Git with R)
+
+7. Create a project in R Studio by cloning the class Github repository
+
+https://github.com/tomhanna-uh/pols3316-summer2022
+
+### Has anyone started on this? Are there any questions or issues so far?
