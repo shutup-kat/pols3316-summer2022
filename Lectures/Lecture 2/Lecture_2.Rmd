@@ -50,7 +50,7 @@ First we get the sum:
 
 ```{r}
 
-sum_7 = 5 + 6 + 7 + 8 + 9 + 10
+sum_7 <- 5 + 6 + 7 + 8 + 9 + 10
 sum_7 
 
 ```
@@ -58,7 +58,7 @@ Then we divide by the number of terms. Count them up - 5,6,7,8,9,10 - there are 
 
 ```{r}
 
-mean_7 = sum_7 / 6
+mean_7 <- sum_7 / 6
 mean_7
 
 ```

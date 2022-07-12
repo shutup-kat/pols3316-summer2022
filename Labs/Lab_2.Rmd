@@ -7,9 +7,197 @@ output:
   pdf_document: default
 ---
 
+## Math functions in R
+
+In lecture I used some math functions. The first one I used to add a sequence of numbers:
+
+```{r}
+
+sum_7 = 5 + 6 + 7 + 8 + 9 + 10
+sum_7 
+
+```
+
+The "sum_7 <-" was something I did to create an object I could use and reuse. You can see that object now in the upper right corner. The "sum_7" by itself was necessary to get the answer to return (or print or echo) to the screen. We'll come back to this in more detail. But you can also just type in the math function if you just need an answer that you don't want to reuse:
+
+```{r}
+5 + 6 + 7 + 8 + 9 + 10
+
+```
+
+### Basic math functions
+
+- Addition +
+- Subtraction -
+- Multiplication *
+- Division /
+
+We'll try a few on here and then you can try a few on your own.
+
+How would I:
+
+- Add 4 and 5?
+
+- Subtract 10 minus 5?
+
+- Divide 10 by 2?
+
+- Multiply 10 by 2?
+
+### Basic plus math functions
+
+- Exponents ^
+- Modulus (the remainder from division) %%
+- Integer division %/%
+
+Examples:
+
+- 4 to 3rd power (or cubed)
+- 2 squared (or second power)
+- Find the remainder of 5 divided by 2
+- Divide 5 by 2, rounding down
+
+```{r}
+
+4^3
+
+2^2
+
+5%%2
+
+5 %/% 2
+
+```
+
+The modulus is probably not something you have seen before. It's useful in programs for things like checking if a number is even or odd. If you divide by 2 and it's even, the modulus will be zero. If it's odd, the modulus will be one.:
+
+```{r}
+
+5%%2
+
+4%%2
+
+10%%2
+
+248682%%2
+
+7456835%%2
+
+```
+
+R follows the standard order of operations including parentheses:
+
+```{r}
+5 + 6/2
+
+(5+6)/2
+```
+
+
+Try a few problems. You can just type in the console area (lower left):
+
+- 5 plus 5
+- 5 to the 5th power
+- 10 + 10
+- (6 + 6)/2
+- 6 + 6/2
+- 10 minus 20
+
+### Relational operators
+
+- Less than <
+- Greater than >
+- equal to == (Note: a single equal sign does something different)
+- Less than or equal to <=
+- Greater than or equal to >=
+- Not equal to !=
+
+These are usually used in programs or functions, some of which may be very short. When you use them, R simply tells you if the statement, which is called a *condition* in R is TRUE or FALSE
+
+```{r}
+
+5 < 3
+5 > 3
+5 != 3
+5 == 3
+#5 = 3
+
+```
+
+```{r}
+
+3 > 3
+3 >= 3
+3 <= 3
+3 != 3
+
+```
+
+You can find more information on these here:
+
+[R Operators: Arithmetic, Relational, Logical, Operational and more](https://www.datamentor.io/r-programming/operator/)
+
+Some other useful math functions are:
+
+- sum(x) - returns the sum of a vector of numbers 
+- log(x) - gives the natural log of x
+- exp(x) - gives the exponential of x (inverse of the natural log)
+- round(x, n) - rounds *x* to the nearest *n* decimal places
+- signif(x, n) - gives *x* to the nearest *n* significant figures
+
+
+Try a few on your computer:
+
+- Round 10.12345 to the nearest 2 decimal places
+- Find the natural log of 12
+- Find the exponential of 2.484907 -
+- Is the natural log of 10 equal to 2.5
+
+
+
+
+
 
 
 ```{r}
-plot(cars)
+
+round(10.12345,2)
+log(12)
+exp(2.484907)
+log(10) == 2.5
+
 ```
+
+## Descriptive Stats using Math functions
+
+### Assignment operator
+
+- The assignment operator in R is <-
+- It tells R that the *object* on the left side has the value on the right side
+- This allows you to do things with that value later
+
+Example, create a new object and give it the value 7:
+
+```{r}
+
+my_new_object <- 7
+
+```
+That's great, but what can I do with it? 
+
+First, I can return (or print or echo) the value to the screen:
+
+```{r}
+
+my_new_object
+```
+I can create an even newer object and assign a value to it based on the first object and some math operation. Then I can return the result to the screen:
+
+```{r}
+
+even_newer_object <- my_new_object + 10
+even_newer_object
+
+```
+
 
