@@ -1,0 +1,205 @@
+---
+title: "July 15 Quiz: POLS 3316"
+output: html_notebook
+---
+
+## Quiz 2 and Problem Set 1
+
+### Due 11:59 PM July 16
+
+## Part 1 - Complete before leaving class Friday
+
+**Run code in R Studio or R Studio Cloud. Download the finished HTML or PDF file and upload to Blackboard by the due date for full credit**
+
+**The areas with ``` followed by {r} and ending with ``` are code chunks. The Run dropdown arrow in the upper right of this box give you options for running the code. Run *Current Chunk* runs just the piece you are working on. After you have finished, you can *Run all* then save the result. Where you see Preview (above just left of center) there is a dropdown arrow. If you select "Knit to HTML" or "Knit to PDF", you can produce a copy that can be downloaded and submitted in Blackboard.**
+
+**IF all else fails, screenshot your work and submit that in Blackbaord.**
+
+For more help with this RMarkdown notebook here are some resources:
+
+Cheatsheet - https://rmarkdown.rstudio.com/lesson-15.HTML
+
+Code Chunks - https://rmarkdown.rstudio.com/lesson-3.html
+
+
+1. a. (bonus) Create a vector named *my_vector* containing the sequence (1,2,3,4,5). Find the sum using the vector. 
+
+
+```{r}
+
+
+
+```
+
+1. Write the code to create an object named *object_sum* whose value is the sum of the sequence of numbers (1,2,3,4,5) from problem 1 and then return the value of that object to the console. (*Hint: you'll use the assignment operator to assign an operation on the right side to object_sum on the left side. Hint2: You can type in a math operation or you can use your code from question 1. Hint 3: To return the value, I've already written the code, all you have to do is uncomment it.*)
+
+```{r}
+
+#object_sum 
+
+```
+
+2. What is the sum of the sequence of numbers (1,2,3,4,5)? (You can code in R for practice by pressing CTRL-ALT-I to create a code "chunk" in the answer spot, or you can add the answer and type it.)
+
+Answer: 
+
+3. How many observations (n) are in the sequence (1,2,3,4,5)?
+
+Answer: 
+
+3. a. Write simple code to create an object called *object_n* and assign this number to it. (*Hint: if you use more than the object name, the assignment operator, and a single digit number you are working too hard!*)
+
+```{r}
+
+
+
+```
+
+4. Write the code to create a new object named *object_mean* whose value is the mean of the above values using *object_sum* and the number of observations *object_n*? (Hint: You'll use the assignment operator with the *object_mean* on the left side and a math operation using the other objects on the right side.)
+
+```{r}
+
+
+
+```
+
+
+5. Get help with the *mean()* function in R in the next code chunk. If you need help for problem 6, you can type the same thing in the Console (bottom left): 
+
+```{r}
+
+
+
+```
+
+6. Now write the code to find the mean of the above values using the *mean()* function in R? (*Hint: If you did the bonus question, 1a it will save you time here*)
+
+
+```{r}
+
+
+
+```
+
+7. Write the code to find the sample variance of the above observations using the objects you created (*object_n, object_mean, object_sum*) and the sequence of values? (*Hint: Creating an object with the sample variance will help with question 8 but remember to return the object's value if you do.*)
+
+
+```{r}
+
+
+
+```
+
+8. Write code to find the standard deviation? 
+
+```{r}
+
+
+
+```
+
+9. What is the median of sequence of values from question 1. 
+
+```{r}
+
+
+
+```
+
+10. What is the mode of  0, 1, 1, 2, 3, 5, 8, 13, 21, 34. 
+
+```{r}
+
+
+
+```
+
+11. What is your favorite food?  
+
+Answer: 
+
+12. What is your Github username?  
+
+Answer: 
+
+13. What is the name of your project data set? 
+
+Answer: 
+
+14. What is the source of your data set?  
+
+Answer: 
+
+15. What would you like to learn from the data set in one or two sentences? (How to use data/R studio/statistitcs is an acceptable answer, but if you want to know more I can help you.)
+
+Answer:
+
+16. (Optional) How many variables does your data have? How many observations does your data have?
+
+Answer:
+
+17. (Optional) Does your data have observations across multiple time periods?
+
+Answer:
+
+### Part 2
+
+*For the remaining problems, you can use math operations or R functions. You can use the methods above (creating objects, etc.) or you can just run the functions on the raw numbers. *
+
+18. What is the sum of the sequence (5,10,15,20,25,30,35,40)
+
+```{r}
+
+
+
+```
+
+19. How many observations (n) are in the sequence in question 18?
+
+20. What is the mean of the sequence in question 18?
+
+```{r}
+
+
+
+```
+
+21. What is the sample variance of the sequence in question 18?
+
+```{r}
+
+
+
+```
+
+22. What is the sample standard deviation of the sequence in question 18?
+
+```{r}
+
+
+
+```
+
+23. What is the median of the sequence in question 18?
+
+24. What is the difference between a sample variance and a population variance? (One or two sentences.)
+
+25. What is the sum of the sequence (3,7,5,5,6,7,7,9)
+
+```{r}
+
+
+
+```
+
+26. What is the mode of the sequence?
+
+27. How many observations (n) are in the sequence?
+
+28. What is the mean of the sequence?
+
+```{r}
+
+
+
+```
