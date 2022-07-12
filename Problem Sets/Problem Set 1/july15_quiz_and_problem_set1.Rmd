@@ -3,7 +3,7 @@ title: "July 15 Quiz: POLS 3316"
 output: html_notebook
 ---
 
-## Quiz 2 and Problem Set 1
+## Quiz 2 and Problem Set 1 combined
 
 ### Due 11:59 PM July 16
 
