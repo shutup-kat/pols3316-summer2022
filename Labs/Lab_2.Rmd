@@ -47,6 +47,7 @@ How would I:
 ### Basic plus math functions
 
 - Exponents ^
+- Square root of x - sqrt(x)
 - Modulus (the remainder from division) %%
 - Integer division %/%
 
@@ -56,6 +57,7 @@ Examples:
 - 2 squared (or second power)
 - Find the remainder of 5 divided by 2
 - Divide 5 by 2, rounding down
+- Square root of 16
 
 ```{r}
 
@@ -66,6 +68,8 @@ Examples:
 5%%2
 
 5 %/% 2
+
+sqrt(16)
 
 ```
 
@@ -199,5 +203,98 @@ even_newer_object <- my_new_object + 10
 even_newer_object
 
 ```
+Apply this to finding the mean of:
 
+5,6,7,12,13,14
+
+The mean is just the sum of the numbers divided by the number of observations. First, I'll create an object called *my_sum* and assign the value of the math operation to get the sum. I'm also going to return that number to the screen, just as a check to make sure it looks right:
+
+```{r}
+
+#create object my_sum with value equal to sum of the digits
+my_sum <- 5 + 6 + 7 + 12 + 13 +14
+
+#return my_sum to screen
+my_sum
+
+```
+
+To get the mean, we divide that by the total observations. We can just count those - 6
+
+First, I'll just do this as a simple math problem, using the answer from the previous part. 
+
+```{r}
+
+57 / 6
+
+```
+
+
+Now because I might want to use the mean  and the number observations later, I'm going to do this as a very short "program." First I'm going to create a new object called *my_observations* with the value of 6. Then I'm going create an object called *my_mean* and compute the value of that using *my_sum* and *my_observations*. Then I'll return the value of the object to the screen:
+
+```{r}
+my_observations <- 6
+
+my_mean <- my_sum / my_observations
+my_mean 
+
+```
+
+On your own, compute the mean of:
+
+10,16,19,21,25,27,28
+
+```{r}
+
+#option 1 - add them up and divide by the number of observations
+#If you use parentheses, you can do this in one line
+
+#count the number of observations and assign it object new_obs
+new_obs <- 
+  
+#use math operation to assign the cum of the values to object #new_sum      
+new_sum <- 
+
+#use math operation to create new object new_mean and assign it #the value of new_sum  divided by new_obs       
+new_mean <- 
+
+#Return new_mean to the screen       
+new_mean
+
+```
+
+Jumping ahead just a bit, the reason for doing all that with creating objects becomes clear if we want to find the *sample* variance and standard deviation of the first problem:
+
+```{r}
+
+#5,6,7,12,13,14
+
+#square the differences between the values and the mean, then
+#add them up
+my_diffs_squared <- (5 - my_mean)^2 + (6 - my_mean)^2 +
+        (7 - my_mean)^2 + (12 - my_mean)^2 + (13 - my_mean)^2 +
+        (14 - my_mean)^2
+
+#divide the sum of squared differences by the number of #observations minus 1 (for sample variance)
+my_variance <- my_diffs_squared / (my_observations - 1)
+my_variance
+
+#checking against the R function
+my_vec <- c(5,6,7,12,13,14)
+my_check <- var(my_vec)
+my_check
+
+```
+Now for the standard deviation:
+
+```{r}
+
+#standard deviation is square root of variance
+my_sd <- sqrt(my_variance)
+my_sd
+
+#checking it against the R function
+my_sd_check <- sd(my_vec)
+my_sd_check
+```
 
