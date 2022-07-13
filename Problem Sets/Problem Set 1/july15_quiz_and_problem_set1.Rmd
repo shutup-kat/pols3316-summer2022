@@ -26,7 +26,7 @@ Code Chunks - https://rmarkdown.rstudio.com/lesson-3.html
 
 
 ```{r}
-
+my_vector <- 1:5
 
 
 ```
@@ -34,23 +34,33 @@ Code Chunks - https://rmarkdown.rstudio.com/lesson-3.html
 1. Write the code to create an object named *object_sum* whose value is the sum of the sequence of numbers (1,2,3,4,5) from problem 1 and then return the value of that object to the console. (*Hint: you'll use the assignment operator to assign an operation on the right side to object_sum on the left side. Hint2: You can type in a math operation or you can use your code from question 1. Hint 3: To return the value, I've already written the code, all you have to do is uncomment it.*)
 
 ```{r}
-
-#object_sum 
+my_vector <- 1:5
+print(my_vector)
+object_sum <- sum(my_vector)
+print(object_sum)
 
 ```
 
 2. What is the sum of the sequence of numbers (1,2,3,4,5)? (You can code in R for practice by pressing CTRL-ALT-I to create a code "chunk" in the answer spot, or you can add the answer and type it.)
 
 Answer: 
+```{r}
+
+print(object_sum)
+```
 
 3. How many observations (n) are in the sequence (1,2,3,4,5)?
 
 Answer: 
+```{r}
+print("an observation is a data point, so there are 5 observations or data points")
+print(my_vector)
+```
 
 3. a. Write simple code to create an object called *object_n* and assign this number to it. (*Hint: if you use more than the object name, the assignment operator, and a single digit number you are working too hard!*)
 
 ```{r}
-
+object_n <- 5
 
 
 ```
@@ -58,7 +68,8 @@ Answer:
 4. Write the code to create a new object named *object_mean* whose value is the mean of the above values using *object_sum* and the number of observations *object_n*? (Hint: You'll use the assignment operator with the *object_mean* on the left side and a math operation using the other objects on the right side.)
 
 ```{r}
-
+object_mean <- mean(object_n, object_sum)
+print(object_mean)
 
 
 ```
@@ -68,6 +79,7 @@ Answer:
 
 ```{r}
 
+print(mean(my_vector))
 
 
 ```
@@ -76,7 +88,7 @@ Answer:
 
 
 ```{r}
-
+print(mean(my_vector))
 
 
 ```
@@ -85,7 +97,9 @@ Answer:
 
 
 ```{r}
-
+object_variance <- c(object_n, object_mean, object_sum, my_vector)
+print(object_variance)
+print(var(object_variance))
 
 
 ```
@@ -94,53 +108,64 @@ Answer:
 
 ```{r}
 
-
+print(object_variance)
+print(sd(object_variance))
 
 ```
 
 9. What is the median of sequence of values from question 1. 
 
 ```{r}
-
-
+object_median <- median(my_vector)
+print(object_median)
 
 ```
 
 10. What is the mode of  0, 1, 1, 2, 3, 5, 8, 13, 21, 34. 
 
 ```{r}
+kat_mode <- function(x){
+        #find unique numbers
+        uniqx <- unique(x)
+        #tabulate returns a vector of occurrences with index as a key
+        uniqx[which.max(tabulate(match(x, uniqx)))]
+        #use which.max to return largest number of occurrences
+}
 
+kat_vec <- c(0, 1, 1, 2, 3, 5, 8, 13, 21, 34)
+result <- kat_mode(kat_vec)
+print(result)
 
 
 ```
 
 11. What is your favorite food?  
 
-Answer: 
+Answer: My favorite food is probably ice cream.
 
 12. What is your Github username?  
 
-Answer: 
+Answer: shutup_kat
 
 13. What is the name of your project data set? 
 
-Answer: 
+Answer: july15_quiz_and_problem_set1_kat_hernandez
 
 14. What is the source of your data set?  
 
-Answer: 
+Answer: github/pols3316-summer2022/problem sets
 
-15. What would you like to learn from the data set in one or two sentences? (How to use data/R studio/statistitcs is an acceptable answer, but if you want to know more I can help you.)
+15. What would you like to learn from the data set in one or two sentences? (How to use data/R studio/statistics is an acceptable answer, but if you want to know more I can help you.)
 
-Answer:
+Answer: Learn how to us R of course, but also how to find trends in data that can be helpful in predicting future trends. 
 
 16. (Optional) How many variables does your data have? How many observations does your data have?
 
-Answer:
+Answer: 10
 
 17. (Optional) Does your data have observations across multiple time periods?
 
-Answer:
+Answer: Im actually not sure what that means.
 
 ### Part 2
 
@@ -150,7 +175,8 @@ Answer:
 
 ```{r}
 
-
+my_vec <- c(5,10,15,20,25,30,35,40)
+print(sum(my_vec))
 
 ```
 
