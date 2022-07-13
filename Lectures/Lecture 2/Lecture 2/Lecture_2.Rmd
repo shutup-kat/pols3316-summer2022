@@ -27,7 +27,7 @@ my_vector <- rnorm(1000, mean=100, sd=2)
 
 Measures of central tendency perform the first function - helping us find the "typical" examples. 
 
-The example you are most familiar with is the **mean** which is often referred to as teh average.
+The example you are most familiar with is the **mean** which is often referred to as the average.
 
 R is a great tool, it can very quickly give us the mean of very large groups of numbers like that sequence of 1000 that I created earlier.
 
@@ -50,7 +50,7 @@ First we get the sum:
 
 ```{r}
 
-sum_7 = 5 + 6 + 7 + 8 + 9 + 10
+sum_7 <- 5 + 6 + 7 + 8 + 9 + 10
 sum_7 
 
 ```
@@ -58,7 +58,7 @@ Then we divide by the number of terms. Count them up - 5,6,7,8,9,10 - there are 
 
 ```{r}
 
-mean_7 = sum_7 / 6
+mean_7 <- sum_7 / 6
 mean_7
 
 ```
