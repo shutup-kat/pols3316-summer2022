@@ -149,7 +149,7 @@ Answer: shutup_kat
 
 13. What is the name of your project data set? 
 
-Answer: july15_quiz_and_problem_set1_kat_hernandez
+Answer: pols3316-summer2022
 
 14. What is the source of your data set?  
 
@@ -181,12 +181,17 @@ print(sum(my_vec))
 ```
 
 19. How many observations (n) are in the sequence in question 18?
+```{r}
+print(unique(my_vec))
+print(" the number of observations in this set is: ")
+print(length(unique(my_vec)))
+```
 
 20. What is the mean of the sequence in question 18?
 
 ```{r}
 
-
+print(mean(my_vec))
 
 ```
 
@@ -194,7 +199,7 @@ print(sum(my_vec))
 
 ```{r}
 
-
+print(var(my_vec))
 
 ```
 
@@ -202,30 +207,46 @@ print(sum(my_vec))
 
 ```{r}
 
-
+print(sd(my_vec))
 
 ```
 
 23. What is the median of the sequence in question 18?
+```{r}
+print(median(my_vec))
+```
 
 24. What is the difference between a sample variance and a population variance? (One or two sentences.)
+
+Answer: Population variance is a set of data coming from a population, while sample variance is a set of data from a specific sample of objects. A sample can be from a portion of the population or from something entierly different. 
 
 25. What is the sum of the sequence (3,7,5,5,6,7,7,9)
 
 ```{r}
-
+newvec <- c(3,7,5,5,6,7,7,9)
+print(sum(newvec))
 
 
 ```
 
 26. What is the mode of the sequence?
+```{r}
+#from function declared in problem 10
+newresult <- kat_mode(newvec)
+print(newresult)
+```
 
 27. How many observations (n) are in the sequence?
+```{r}
+print(unique(newvec))
+print(" the number of observations in this set is: ")
+print(length(unique(newvec)))
+```
 
 28. What is the mean of the sequence?
 
 ```{r}
-
+print(mean(newvec))
 
 
 ```
